@@ -160,7 +160,6 @@ There are several things that need to be remembered:
 		var/obj/item/bodypart/chest/my_chest = get_bodypart(BODY_ZONE_CHEST)
 		my_chest?.worn_uniform_offset?.apply_offset(uniform_overlay)
 		overlays_standing[UNIFORM_LAYER] = uniform_overlay
-		apply_overlay(UNIFORM_LAYER)
 
 	apply_overlay(UNIFORM_LAYER)
 	check_body_shape(BODYSHAPE_DIGITIGRADE, ITEM_SLOT_ICLOTHING)
@@ -599,6 +598,7 @@ There are several things that need to be remembered:
 		if(!mutant_override) // NOVA EDIT ADDITION
 			my_chest?.worn_suit_offset?.apply_offset(suit_overlay) // NOVA EDIT CHANGE - Indented
 		overlays_standing[SUIT_LAYER] = suit_overlay
+
 	apply_overlay(SUIT_LAYER)
 	check_body_shape(BODYSHAPE_DIGITIGRADE, ITEM_SLOT_OCLOTHING)
 
