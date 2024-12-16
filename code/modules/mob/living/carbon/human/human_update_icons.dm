@@ -1084,7 +1084,7 @@ mutant_styles: The mutant style - taur bodytype, STYLE_TESHARI, etc. // NOVA EDI
 	for(var/obj/item/bodypart/limb as anything in bodyparts)
 		var/checked_bodyshape = limb.bodyshape
 		// accounts for stuff like snouts
-		for(var/obj/item/organ/external/organ in limb) // NOVA EDIT CHANGE - Bandaid until the external organ removal pr - ORIGINAL: for(var/obj/item/organ/organ in limb)
+		for(var/obj/item/organ/organ in limb)
 			checked_bodyshape |= organ.external_bodyshapes
 
 		// any limb needs to be updated, so stop here and do it
